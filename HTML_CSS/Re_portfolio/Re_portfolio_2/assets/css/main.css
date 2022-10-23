@@ -1,0 +1,205 @@
+body {
+  background-color: #f7f9fc;
+  padding: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  min-width: 1200px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.base-box {
+  background-color: #fff;
+  box-shadow: 4px 4px 4px #eaeaea;
+  border-radius: 10px;
+}
+
+.btn {
+  background-color: #6fbaf8;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 30px 10px 30px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.profile-image {
+  border-radius: 1000px;
+  box-shadow: 1px 1px 15px #c5c5c5;
+}
+
+.profile-container {
+  padding: 60px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.profile-container .profile {
+  display: flex;
+  align-items: center;
+}
+.profile-container .profile img {
+  margin-right: 30px;
+  width: 200px;
+}
+.profile-container .profile h2 {
+  margin: 0 0 1px 0;
+  font-size: 32px;
+}
+.profile-container .profile p {
+  margin: 1px 0 12px 0;
+  font-size: 18px;
+}
+.profile-container .profile .address {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  color: #6fbaf8;
+}
+.profile-container .profile-detail {
+  padding: 32px 52px 32px 80px;
+  border-left: 2px solid rgba(211, 211, 211, 0.3);
+}
+.profile-container .profile-detail .profile-item {
+  display: flex;
+  margin: 0 0 16px 0;
+}
+.profile-container .profile-detail .profile-item .key {
+  margin-right: 100px;
+  font-size: 16px;
+  font-weight: 600;
+  width: 100px;
+}
+.profile-container .profile-detail .profile-item .value {
+  font-size: 16px;
+  width: 120px;
+}
+.profile-container .profile-detail .profile-item:last-child {
+  margin: 0 0 0 0;
+}
+
+.tab {
+  margin: 80px 0 0 0;
+  border-bottom: 1px solid rgba(211, 211, 211, 0.5);
+  display: flex;
+  position: relative;
+}
+.tab span {
+  bottom: -2px;
+  position: absolute;
+  width: 60px;
+  text-align: center;
+  color: #6fbaf8;
+  font-size: 20px;
+  font-weight: 700;
+  border-bottom: 3px solid #6fbaf8;
+  padding: 16px 24px;
+}
+
+.article-content {
+  display: flex;
+  margin-top: 20px;
+}
+.article-content h3 {
+  font-size: 28px;
+  font-weight: 500;
+}
+.article-content p {
+  margin: 0 0 0 0;
+  font-size: 16px;
+  line-height: 28px;
+}
+.article-content div {
+  margin: 0 16px 0 0;
+  padding: 24px 44px;
+}
+.article-content .left-box {
+  flex: 1.5;
+  height: 400px;
+}
+.article-content .middle-box {
+  flex: 7;
+}
+.article-content .middle-box .middle-item {
+  border-bottom: 2px solid rgba(211, 211, 211, 0.3);
+  padding: 24px 0 100px 0;
+}
+.article-content .middle-box .middle-item:last-child {
+  border: none;
+}
+.article-content .middle-box .middle-item .middle-skills {
+  display: flex;
+  padding: 0;
+}
+.article-content .middle-box .middle-item .middle-skills .skill {
+  border: 1px rgba(158, 158, 158, 0.5) solid;
+  border-radius: 20px;
+  padding: 5px 15px 5px 15px;
+  margin-left: 5px;
+}
+.article-content .right-box {
+  flex: 3.5;
+  margin: 0;
+  padding: 0;
+}
+.article-content .right-box .sign-up {
+  text-align: center;
+  padding: 40px 24px;
+}
+.article-content .right-box .sign-up svg {
+  width: 100px;
+  color: #6fbaf8;
+}
+.article-content .right-box .sign-up h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.article-content .right-box .sign-up p {
+  color: #6fbaf8;
+  margin-top: 12px;
+  cursor: pointer;
+}
+.article-content .right-box .people {
+  padding: 16px;
+}
+.article-content .right-box .people h3 {
+  font-size: 20px;
+  padding: 16px 12px;
+  border-bottom: 2px solid rgba(211, 211, 211, 0.5);
+}
+.article-content .right-box .people .people-item {
+  display: flex;
+  align-items: center;
+  padding: 16px 8px;
+}
+.article-content .right-box .people .people-item img {
+  width: 72px;
+  height: 72px;
+  cursor: pointer;
+}
+.article-content .right-box .people .people-item h5 {
+  margin: 0 0 4px 0;
+  font-size: 20px;
+  cursor: pointer;
+}
+.article-content .right-box .people .people-item p {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+  line-height: 16px;
+}
+.article-content .right-box .people .people-item .people-profile {
+  padding: 0;
+  margin-left: 20px;
+}
+.article-content .right-box .people .people-item .address {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  color: #6fbaf8;
+  font-size: 12px;
+}/*# sourceMappingURL=main.css.map */

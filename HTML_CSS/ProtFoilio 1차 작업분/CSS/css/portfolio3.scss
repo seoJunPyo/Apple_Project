@@ -1,0 +1,356 @@
+@use '../css/base.scss';
+
+
+%box-shadow {
+    box-shadow: 5px 5px 15px -10px grey;
+}
+
+.side-bar {
+    width: 200px;
+    height: 100%;  
+    padding-top: 30px;
+    background-color:  rgb(49, 0, 139);
+    position: fixed;
+    left: -150px;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 50px 50px 50px 50px;
+    grid-template-columns: 150px 50px;    
+
+    i {
+        color: white;        
+    }
+
+    p{
+        color: white;
+        text-align: start;        
+    }
+}
+
+.side-bar:hover {
+    left: 0px;
+    transition: all 1s;
+
+    i {
+        transform: translateX(-125px);
+    }
+
+    p {
+        transform: translateX(100px);
+        transition-duration: 1s;
+    }
+
+}
+
+
+.top-bar {
+    padding: 15px;
+    padding-left: 70px;
+    padding-bottom: 50px;
+    width: 100%;
+    height: 50px;     
+    background-color: white; 
+    @extend %box-shadow 
+}
+
+
+
+.search-bar {
+    min-width: 300px;   
+
+    input {
+        padding: 5px;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+        margin: 0px;    
+        border: 1px silver solid;
+        width: 200px;
+        border-right: none; 
+        box-sizing: border-box;        
+    }
+
+    input:focus {
+        width: 400px;
+        transition: all 1s;
+
+    }
+
+    button {
+        width: 40px;        
+        padding: 6px;
+        border-end-end-radius: 3px;
+        border-top-right-radius: 3px;
+        right: 0;
+        margin: 0px;  
+        border: none;
+        background-color: rgb(41, 41, 41);
+        color: white;
+        box-sizing: border-box;
+        right: 6px;
+      
+    }  
+    
+}
+
+.profile {   
+    color: grey;
+    opacity: 0.8;
+    text-align: end;
+    min-width: 300px;
+
+    i {
+        margin: 8px;
+        position: relative;
+        margin-right: 30px;        
+    }
+
+    span {
+        margin: 8px;      
+   
+    }
+}
+
+.alarm {
+    background-color: red;   
+    padding: 5px;
+    color: white;
+    font-size: 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+}
+
+.summery {
+    display: flex;
+    max-width: 1750px;
+}
+
+.dashboard {
+    width: 100%;
+    margin-left: 50px;
+    padding: 35px;
+    padding-left: 15px;
+
+    h3 {
+        font-weight: bolder;
+        margin-bottom: 40px;
+    }
+
+}
+
+@mixin side ($color) {
+    background-color: $color;    
+}
+
+.dashcard {
+    width: 100%;    
+    min-width: 350px;
+    margin-right: 20px;;
+    height: 150px;
+    display: flex;
+    @extend %box-shadow 
+}
+
+.side {
+    height: 100%;
+    width: 10px; 
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.bg-aqua {
+    @include side (aqua)
+}
+
+.bg-green {
+    @include side (green)
+}
+
+.bg-blue {
+    @include side (blue)
+}
+
+.bg-orange {
+    @include side (orange)
+}
+
+.card-content {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-end-end-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;   
+
+    div {
+        padding: 20px;        
+    }
+
+    p {
+        margin-top: 15px;
+        margin-bottom: 5px;
+        font-size: 20px;
+    }
+
+    i {
+        font-size: 50px;
+        padding: 30px;
+        color: grey;
+        margin-right: 0;
+        margin-left: auto; 
+        margin-top: 15px;     
+       
+    }
+
+}
+
+.overview_tasks {
+    display: flex;
+}
+
+@mixin Card($width) {
+    width: $width;
+    margin-top: 50px;
+    border-radius: 10px;
+    border: 1px solid silver;       
+    @extend %box-shadow;    
+}
+
+%Card-title {
+    background-color: #e9ecef;
+    border-bottom: 1px solid silver; 
+    padding: 20px;
+    padding-bottom: 1px;
+    height: 75px; 
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px; 
+}
+
+@mixin Card-content ($boader, $height, $left, $leftt) {
+    background-color: white;
+    padding: 20px;
+    height: $height;
+    border-bottom: $boader;
+    border-bottom-left-radius: $left; 
+    border-bottom-right-radius: $left;
+}
+
+.overview {
+    @include Card(65%);
+    max-width: 1150px;
+    min-width: 1150px;
+}
+
+.overview-title {
+    @extend %Card-title
+}
+
+.overview-chart {
+    @include Card-content (none,600px,10px,10px)
+}
+
+.tasks {
+    @include Card(30%);
+    height: 300px;
+    margin-left: 50px;
+    min-width: 300px; 
+    max-width: 525px;
+
+    p{
+        float: left;
+        font-size: 20px;
+        padding-top: 3px;
+        
+    }
+
+    span {
+        float:right;
+        font-size: 15px;
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-top: 5px;   
+    }
+}
+
+.tasks-title {
+    @extend %Card-title
+}
+
+.tasks-content {
+    @include Card-content (1px solid silver,75px,0px,0px)
+}
+
+.tasks-content-last {
+    @include Card-content (1px solid silver,75px,10px,10px)
+}
+
+@media screen and (max-width:768px) {
+
+    .search-bar input {            
+        width: 100px;    
+    }
+
+    .search-bar  input:focus {
+        width: 250px;
+        transition: all 1s;
+    }
+
+    .summery {
+        flex-direction: column;
+    }
+
+    .dashcard {  
+        margin-bottom: 20px;     
+       height: 100px;
+       width: 600px;
+
+       p {
+        font-size: 15px;
+        margin-top: 0;
+       }
+
+       h3 {
+        font-size: 25px;
+        
+       }
+
+       i {
+        font-size: 40px;
+        margin-top: 0;
+       }
+
+    }
+
+    .overview_tasks {
+        flex-direction: column;
+    }
+
+    .overview {
+        @include Card(20%);
+        max-width: 600px;
+        min-width: 600px;
+    }
+
+    .overview-chart {
+        @include Card-content (none,320px,10px,10px);
+        max-width: 600px;
+        min-width: 600px;
+    }
+
+    .overview-title {
+        @extend %Card-title;
+        width: 600px;
+        
+    }
+
+    .tasks {
+        @include Card(100%);
+        height: 300px;
+        margin-left: 0px;
+        min-width: 300px; 
+        max-width: 600px;
+    }
+    
+}
+

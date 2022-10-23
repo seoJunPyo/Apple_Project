@@ -1,0 +1,246 @@
+$bgc : #f7f9fc;
+$skyblue : #6fbaf8;
+
+body {
+ 
+  background-color: $bgc;
+  padding: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  min-width: 1200px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.base-box {
+  background-color: #fff;
+  box-shadow: 4px 4px 4px #eaeaea;
+  border-radius: 10px;
+}
+
+.btn {
+  background-color: $skyblue;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 30px 10px 30px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.profile-image {
+  border-radius: 1000px;
+  box-shadow: 1px 1px 15px #c5c5c5;
+}
+
+.profile-container {
+  padding: 60px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .profile {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: 30px;
+      width: 200px;
+    }
+
+    h2 {
+      margin: 0 0 1px 0;
+      font-size: 32px;
+    }
+
+    p {
+      margin: 1px 0 12px 0;
+      font-size: 18px;
+    }
+
+    .address {
+      display: flex;
+      align-items: center;
+      margin-bottom: 12px;
+      color: $skyblue;
+    }
+  }
+  
+  .profile-detail {
+    padding: 32px 52px 32px 80px;
+    border-left: 2px solid rgba(211, 211, 211, 0.3);
+
+    .profile-item {
+      display: flex;
+      margin: 0 0 16px 0;
+
+      .key {
+        margin-right: 100px;
+        font-size: 16px;
+        font-weight: 600;
+        width: 100px;
+      }
+
+      .value {
+        font-size: 16px;
+        width: 120px;
+      }
+
+      &:last-child {
+        margin: 0 0 0 0;
+      }
+    }
+  }
+}
+
+.tab {
+  margin: 80px 0 0 0;
+  border-bottom: 1px solid rgba(211, 211, 211, 0.5);
+  display: flex;
+  position: relative;
+
+  span {
+    bottom: -2px;
+    position: absolute;
+    width: 60px;
+    text-align: center;
+    color: $skyblue;
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom: 3px solid $skyblue;
+    padding: 16px 24px;
+  }
+}
+
+.article-content {
+  display: flex;
+  margin-top: 20px;
+
+  h3 {
+    font-size: 28px;
+    font-weight: 500;
+  }
+
+  p {
+    margin: 0 0 0 0;
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  div {
+    margin: 0 16px 0 0;
+    padding: 24px 44px;
+  }
+
+  .left-box {
+    flex: 1.5;
+    height: 400px;
+  }
+
+  .middle-box {
+    flex: 7;
+
+    .middle-item {
+      border-bottom: 2px solid rgba(211, 211, 211, 0.3);
+      padding: 24px 0 100px 0;
+
+      &:last-child {
+        border: none;
+      }
+
+      .middle-skills {
+        display: flex;
+        padding: 0;
+
+        .skill {
+          border: 1px rgba(158, 158, 158, 0.5) solid;
+          border-radius: 20px;
+          padding: 5px 15px 5px 15px;
+          margin-left: 5px;
+        }
+      }
+
+     
+    }
+  }
+
+  .right-box {
+    flex: 3.5;
+    margin: 0;
+    padding: 0;
+
+    .sign-up {
+      text-align: center;
+      padding: 40px 24px;
+
+      svg {
+        width: 100px;
+        color: $skyblue;
+      }
+
+      h3 {
+        font-size: 20px;
+        font-weight: 600;
+      }
+
+      p {
+        color: $skyblue;
+        margin-top: 12px;
+        cursor: pointer;
+      }
+      
+    }
+
+    .people {
+      padding: 16px;
+
+      h3 {
+        font-size: 20px;
+        padding: 16px 12px;
+        border-bottom: 2px solid rgba(211, 211, 211, 0.5);
+      }
+
+      .people-item {
+        display: flex;
+        align-items: center;
+        padding: 16px 8px;
+
+
+        img {
+          width: 72px;
+          height: 72px;
+          cursor: pointer;
+        }
+
+        h5 {
+          margin: 0 0 4px 0;
+          font-size: 20px;
+          cursor: pointer;
+        }
+
+        p {
+          margin: 0 0 8px 0;
+          font-size: 16px;
+          line-height: 16px;
+        }
+
+        .people-profile {
+          padding: 0;
+          margin-left: 20px;
+        }
+
+        .address {
+          display: flex;
+          align-items: center;
+          padding: 0;
+          margin: 0;
+          color: $skyblue;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

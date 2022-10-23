@@ -1,0 +1,83 @@
+.container {
+    width: 1000px;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.review {
+    width: 70%;
+    height: 100%;
+    float: left;
+}
+
+.img {
+    width: 30%;
+    height: 100%;
+    float: left;
+} 
+
+.name {
+    width: 100%;
+    height: 30%;
+    clear: both;
+}
+
+.content {
+    width: 100%;
+    height: 70%;   
+    clear: both;
+}
+
+.profile-img {
+   height: 100%;
+   width: auto;   
+}
+
+.profile {
+    height: 100%;
+    float: left;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+
+.profile name {    
+    margin-top: 10px;
+}
+
+.변비 {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar li  {
+    display: inline;
+    width: 60px;
+    text-align: center;
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* class명 [태그] - 자식태그에 [태그]에 class style 적용
+class명>[태크] 직계자식 태그에만 class style 적용 */
+
+.navbar a {
+    font-size: 16px;
+    text-decoration: none;  
+     
+}
+
+.navbar a:hover {
+    color : black
+}
+
+ .navbar a:active {
+    color:aquamarine
+ }
+/* a:link - 방문전
+a:visited - 방문후
+a:hover - 마우스 커서를 올려놨을때
+a:active -클릭하는 순간 */

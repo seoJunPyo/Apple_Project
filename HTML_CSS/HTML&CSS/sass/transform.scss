@@ -1,0 +1,134 @@
+body {
+    margin: 0px;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.ani-text {
+    text-align: center;
+
+    &:hover {
+        animation-name: 작명;
+        animation-duration: 5s;
+    }
+}
+
+
+@keyframes 작명 {
+    0% {
+        transform: translateX(0px);
+    }
+    33% {
+        transform: translateX(-100px);
+    }
+
+    66% {
+        transform: translateX(100px);
+    }
+
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.ani-btn {
+    background-color: skyblue;
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;  
+    
+    &:hover {
+        animation-name: 흔들;
+        animation-duration: 0.5s;
+    }
+}
+
+
+@keyframes 흔들 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-10deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+
+    75% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.ani-plus {
+    border: none;
+    background: none;
+    font-size: 100px;
+
+    &:hover {
+        animation-name: 흔들커짐;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes 흔들커짐 {
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+        transform: rotate(-20deg);
+    }
+
+    100% {       
+        transform: rotate(45deg) scale(2);           
+    }   
+
+}
+
+.ani-menu {
+    background: black;    
+    color: white;
+    width: 200px;
+    height: 100%;
+    position: fixed;    
+    padding: 20px; 
+    text-align: end;
+    transition: all 1s;
+    transform: translateX(-150px);
+
+    p {
+        text-align: center;
+    }
+
+    &:hover {
+        text-align: center;
+        transform: translateX(0px);
+        
+        p {
+            animation-name: item;
+            animation-duration: 1s;
+        }
+    }
+    
+}
+
+
+@keyframes item {
+    0% { transform: translateX(-800px);}    
+    50% { transform: skew(-40deg) translateX(80px); }
+    100% { transform: translateX(0px);}
+
+}

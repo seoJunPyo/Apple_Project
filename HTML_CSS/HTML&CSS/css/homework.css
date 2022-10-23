@@ -1,0 +1,38 @@
+.main {
+     width: 75%;
+     height: 300px;
+     float: left;
+}
+
+.image {
+     width: 25%;
+     height: 300px;
+     float: left;
+}
+
+
+.name {
+     width: 100%;
+     height: 25%;
+}
+
+.content {
+     width: 100%;
+     height: 75%; 
+}
+
+.profile {
+     margin-top: auto;
+     margin-bottom: auto;
+     height: 100%;
+     width: 75px;    
+     float: left; 
+     padding-right: 15px;    
+}
+
+.size {
+     height: 100%;
+     width: 100%;     
+}
+
+

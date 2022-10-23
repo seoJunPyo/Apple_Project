@@ -1,0 +1,88 @@
+.profile {
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.headline {
+     text-align: center;    
+     color: palevioletred;
+     font-size: 16px;
+}
+
+p {
+    text-align: end;
+}
+
+#special {
+    text-align: center; color: orange; font-size: 20px;
+    }
+
+.coffee {
+    color:saddlebrown; font-weight: bolder; font-size: 50px;
+}
+
+.coding {
+    text-align: end; font-size: 100px; color:red
+}
+
+.box {
+    width: 300px; 
+    background: cadetblue;
+    margin-top: 10px;
+    padding: 40px;
+    border: 4px solid black;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 10px;
+    color: white;
+    box-shadow: 10px 10px 10px black;
+}
+
+/* div, p, h 특징 : display : block 속성가지고 있음 */
+
+/* css는 inherit 기능 지원 - font, color 등의 스타일 - 중요도가 제일 낮은 속성
+부모 태그에 달아도 자식태그에도 적용 */
+
+.container {
+    width: 800px;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    background: aquamarine;
+
+}
+
+.left-menu {
+    width: 20%;
+    height: 400px;
+    background-color: cornflowerblue;
+    /* float: left; */
+    display: inline-block;
+    vertical-align: top;
+}
+
+.right-menu {
+    width: 80%;
+    height: 400px;
+    background-color: coral;
+    /* float: left; */
+    display: inline-block;
+}
+
+
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: grey;
+    /* clear: both; */
+}
+
+/* float 다음 요소에 clear 사용. */
+/* diplay : block 한행은 전부차지
+disply : inline-block은 내 크기만큼 차지 - 공벡없어야됨
+주변에 텍스트 입력 시, 텍스트 베이스라인에 맞추려 하는 속성이 있음 */

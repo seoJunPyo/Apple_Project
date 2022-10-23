@@ -1,0 +1,23 @@
+.flex-container {    
+    width: 100%;
+}
+
+.flex-item {    
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+
+@media screen and (max-width :1200px) {
+    .flex-item {
+        width: 50%;
+        float: left;
+    }
+}
+
+@media screen and (max-width :768px) {
+   .flex-item {
+    width: 100%;
+   }
+}
+

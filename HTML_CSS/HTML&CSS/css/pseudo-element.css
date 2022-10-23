@@ -1,0 +1,6 @@
+.pseudo::before {
+    content: '안녕';
+    color: red;
+    font-size: 30px;
+}
+

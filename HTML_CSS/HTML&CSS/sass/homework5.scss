@@ -1,0 +1,107 @@
+@mixin lsit-box($border-top) {
+    width: 400px;
+    height: 50px;  
+    border: 1px solid silver; 
+    padding-left: 20px;
+    line-height: 45px;
+    border-top: $border-top;             
+}
+
+@mixin list-hover() {
+    background: blue;
+    color: white;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;     
+}
+
+.first {
+    @include lsit-box(1px solid silver);
+
+    &:hover {
+        @include list-hover()
+    }
+}
+
+.second {
+    @include lsit-box(none);
+
+    &:hover {
+        @include list-hover()
+    }
+
+}
+
+.third {
+    @include lsit-box(none);
+
+    &:hover {
+        @include list-hover()
+    }
+}
+
+%alert {
+    height: 30px;
+    width: 800px;    
+    padding: 10px;
+    border-radius: 5px; 
+    border: 1px solid; 
+    margin-top: 30px; 
+    
+    p {
+        margin-top: 3px;
+    }
+    
+    span {
+        font-weight: bolder;
+    }
+}
+
+@mixin alert-color($boder-color, $bg-color, $f-color) {
+    border-color: $boder-color;
+    background: $bg-color;
+    color: $f-color;
+}
+
+.alert-green {
+    @extend %alert;
+    @include alert-color (rgb(0, 227, 0), #d6f3bb, rgb(0, 87, 0))
+}
+
+.alert-blue {
+    @extend %alert;
+    @include alert-color (rgb(69, 111, 226), #d5e4fc, rgb(1, 1, 94))
+}
+
+.alert-yellow {
+    @extend %alert;
+    @include alert-color (rgb(223, 227, 0), #f2f3bb, rgb(106, 106, 2))
+}
+
+.row {
+    display: flex;
+}
+
+@mixin flex($flex-width) {
+    flex-basis: $flex-width;   
+}
+
+.col-6 {
+    @include flex (50%)
+}
+
+.col-4 {
+    @include flex (33.33%)
+}
+
+.col-3 {
+    @include flex (25%)
+}
+
+@media screen and (max-width: 1400px) {
+    .col-xl-6   {
+        @include flex (50%)
+    } 
+}

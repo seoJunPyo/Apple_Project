@@ -1,0 +1,100 @@
+ul {
+  list-style: none;
+}
+
+.first {
+  width: 400px;
+  height: 50px;
+  border: 1px solid silver;
+  padding-left: 20px;
+  line-height: 45px;
+  border-top: 1px solid silver;
+}
+.first:hover {
+  background: blue;
+  color: white;
+  cursor: pointer;
+}
+
+.second {
+  width: 400px;
+  height: 50px;
+  border: 1px solid silver;
+  padding-left: 20px;
+  line-height: 45px;
+  border-top: none;
+}
+.second:hover {
+  background: blue;
+  color: white;
+  cursor: pointer;
+}
+
+.third {
+  width: 400px;
+  height: 50px;
+  border: 1px solid silver;
+  padding-left: 20px;
+  line-height: 45px;
+  border-top: none;
+}
+.third:hover {
+  background: blue;
+  color: white;
+  cursor: pointer;
+}
+
+.alert-yellow, .alert-blue, .alert-green {
+  height: 30px;
+  width: 800px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid;
+  margin-top: 30px;
+}
+.alert-yellow p, .alert-blue p, .alert-green p {
+  margin-top: 3px;
+}
+.alert-yellow span, .alert-blue span, .alert-green span {
+  font-weight: bolder;
+}
+
+.alert-green {
+  border-color: rgb(0, 227, 0);
+  background: #d6f3bb;
+  color: rgb(0, 87, 0);
+}
+
+.alert-blue {
+  border-color: rgb(69, 111, 226);
+  background: #d5e4fc;
+  color: rgb(1, 1, 94);
+}
+
+.alert-yellow {
+  border-color: rgb(223, 227, 0);
+  background: #f2f3bb;
+  color: rgb(106, 106, 2);
+}
+
+.row {
+  display: flex;
+}
+
+.col-6 {
+  flex-basis: 50%;
+}
+
+.col-4 {
+  flex-basis: 33.33%;
+}
+
+.col-3 {
+  flex-basis: 25%;
+}
+
+@media screen and (max-width: 1400px) {
+  .col-xl-6 {
+    flex-basis: 50%;
+  }
+}/*# sourceMappingURL=homework5.css.map */

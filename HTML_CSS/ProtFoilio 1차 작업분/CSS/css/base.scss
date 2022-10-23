@@ -1,0 +1,38 @@
+body {
+    margin: 0px;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+}
+
+@mixin  flex-w($flex-width) {
+    flex-basis: $flex-width;
+}
+.col-12 { @include flex-w(100%) }
+
+.col-11 { @include flex-w(91.66%) }
+
+.col-10 { @include flex-w(83.33%) }
+
+.col-9 { @include flex-w(75%) }
+
+.col-8 { @include flex-w(66.67%) }
+
+.col-7 { @include flex-w(58.33%) }
+
+.col-6 { @include flex-w(50%) }
+
+.col-5 { @include flex-w(100%) }
+
+.col-4 { @include flex-w(33.33%) }
+
+.col-3 { @include flex-w(25%) }
+
+.col-2 { @include flex-w(16.67%) }
+
+.col-1 { @include flex-w(8.33%) }

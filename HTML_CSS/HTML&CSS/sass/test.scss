@@ -1,0 +1,69 @@
+@use '../sass/reset';
+
+.main-bg {
+
+    width: 100px;
+
+    h4 {
+        color: black;
+    }
+
+    p {
+        color: aqua;
+    }
+}
+
+%btn {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    font-weight: bolder
+}
+
+// 임시 클래스는 컴파일 안됨
+
+.btn-green {
+    @extend %btn;
+    color: green;
+}
+
+%box {
+    width: 200%;
+    height: 200px;
+    padding: 20px;
+}
+
+.red {
+    @extend %box;
+    background: red;    
+}
+
+.blue {
+    @extend %box;
+    background: blue;
+}
+
+.green {
+    @extend %box;
+    background: green;    
+}
+
+
+
+@mixin font-style($구멍) {
+    font-size: $구멍;
+    letter-spacing: -1px;
+}    
+
+h2 {
+    @include font-style(20px); 
+    color: reset.$main-color;   
+}
+
+h3 {
+   @include font-style(20px);
+}
+
+h4 {
+    @include font-style(10px);
+}

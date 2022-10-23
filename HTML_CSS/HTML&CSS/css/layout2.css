@@ -1,0 +1,49 @@
+.main-background {
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/변비.jpg); 
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: brightness(70%);
+    padding: 1px;
+}
+
+/* ../ : 상위폴더로 이동하라는 명령어 */
+/* cover : div에 배경사진 맞추기
+contain */
+
+.main-title {
+    color: white;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-left: 130px;
+}
+
+/* margin collapse 현상 : 박스 2개의 위쪽 테두리가 겹쳐지면서 margin이 합쳐지는 현상 */
+
+button {
+    background-color: brown;
+    border-radius: 5px;
+    border:none;
+    color: white;
+    padding: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    position: absolute;
+    top: 100px;
+    left: 100px
+}
+
+/*positon: absolute - 부모태그에 relative 속성을 기준으로 포지셔닝 */
+
+button:active {
+    background-color: burlywood;
+}
+
+.main-content {
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 150px;
+}

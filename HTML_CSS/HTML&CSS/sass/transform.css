@@ -1,0 +1,187 @@
+@charset "UTF-8";
+body {
+  margin: 0px;
+}
+
+.ani-text {
+  text-align: center;
+  margin-top: 0;
+}
+.ani-text:hover {
+  -webkit-animation-name: 작명;
+          animation-name: 작명;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+@-webkit-keyframes 작명 {
+  0% {
+    transform: translateX(0px);
+  }
+  33% {
+    transform: translateX(-100px);
+  }
+  66% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes 작명 {
+  0% {
+    transform: translateX(0px);
+  }
+  33% {
+    transform: translateX(-100px);
+  }
+  66% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.ani-btn {
+  background-color: skyblue;
+  border: none;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+}
+.ani-btn:hover {
+  -webkit-animation-name: 흔들;
+          animation-name: 흔들;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;       
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes 흔들 {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes 흔들 {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.ani-plus {
+  border: none;
+  background: none;
+  font-size: 100px;
+}
+.ani-plus:hover {
+  -webkit-animation-name: 흔들커짐;
+          animation-name: 흔들커짐;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes 흔들커짐 {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(45deg) scale(2);
+  }
+}
+
+@keyframes 흔들커짐 {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(45deg) scale(2);
+  }
+}
+.ani-menu {
+  background: black;
+  opacity: 0.8;
+  color: white;
+  width: 200px;
+  height: 100%;
+  position: fixed;
+  padding: 20px;
+  text-align: end;
+  transition: all 1s;
+  transform: translateX(-150px);
+}
+.ani-menu p {
+  text-align: center;
+}
+.ani-menu:hover {
+  text-align: center;
+  transform: translateX(0px);
+}
+.ani-menu:hover p {
+  -webkit-animation-name: item;
+          animation-name: item;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes item {
+  0% {
+    transform: translateX(-800px);
+  }
+  50% {
+    transform: skew(-40deg) translateX(80px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes item {
+  0% {
+    transform: translateX(-800px);
+  }
+  50% {
+    transform: skew(-40deg) translateX(80px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.ani-test {
+  text-align: center;
+}
+/*# sourceMappingURL=transform.css.map */

@@ -1,0 +1,123 @@
+table {
+    border-collapse: collapse;
+    width: 100%;   
+    max-width: 400px;
+    min-width: 300px;
+    border-radius: 5px;
+    
+}
+
+thead {
+    color: darkblue;
+    text-align: center;
+    font-size: 10px;
+}
+
+td {   
+    border-radius: 5px;
+    vertical-align: middle;
+    font-size: 10px;
+    text-align: center;
+}
+
+tr {
+   border-bottom: 1px solid skyblue;
+}
+
+body {
+    margin: 0px;
+    background-color: skyblue;
+}
+
+.main {
+    margin: auto;
+    width: 100%;
+    height: auto;
+    padding: 1px;
+}
+
+.title{
+    margin: auto;
+    width: 70%;
+    color: darkblue;
+    font-size: 10px;    
+
+}
+
+.content {
+    background-color: white;
+    margin: auto;
+    width: 70%; 
+    max-width: 400px;
+    min-width: 300px;  
+    border-radius: 5px;
+    padding: 1px;
+    
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 12px;
+}
+
+table p {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-size: 10px;
+    color: skyblue;
+}
+
+.item {
+    text-align: left;
+    width: 50%;
+}
+
+.total {
+    font-size: 15px; 
+    color: darkblue;
+    text-align: right;    
+}
+
+.img {
+    margin: 5px;
+    vertical-align: middle;
+}
+
+span {
+    padding: 10px;
+}
+
+.last {
+    margin: auto;
+    height: auto;
+    width: 70%;  
+    padding: 1px; 
+}
+
+.link {
+    width: 70%;
+    font-size: 5px;
+    float: left;
+}
+
+.button {   
+    float: left; 
+    width: 30%; 
+     
+}
+
+button {
+    color: white;
+    background-color: darkblue;
+    padding: 3px;
+    border: none;
+    border-radius: 5px;
+    font-size: 5px;
+  
+}

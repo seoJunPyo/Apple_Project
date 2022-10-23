@@ -1,0 +1,20 @@
+.flex-container {
+    display: flex;
+    height: 500px;
+    align-items: center;
+   
+}
+
+.flex-item {
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+    margin: 5px;
+}
+
+.test {
+    font-size: 1rem;
+    width: 20rem;
+    height: 50vh;
+    background-color: grey;
+}

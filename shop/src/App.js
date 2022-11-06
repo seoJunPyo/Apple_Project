@@ -1,12 +1,13 @@
 // 스타일 파일
 import "./App.css";
-import stlyed from "styled-components";
+// import stlyed from "styled-components";
 
 // State
-import { useState } from "react";
+import { createContext, useState } from "react";
 
-// router-library
+// library
 import { Routes, Route, Link, useNavigate, Outlet } from "react-router-dom";
+import axios from "axios";
 
 // Bootstrap
 import Container from "react-bootstrap/Container";
@@ -22,16 +23,16 @@ import { Detail } from "./pages/Detail.js";
 import { ItemCard } from "./pages/ItemCard.js";
 import { About } from "./pages/About.js";
 import { Event, EventOne, EventTwo } from "./pages/Events.js";
+import { getAxios } from "./pages/axios";
 
-let YellowBTn = stlyed.button`
-  background : yellow;
-  color : black;
-  padding : 10px
-`;
+export let Context1 = createContext();
 
 function App() {
-  let [shoes] = useState(data);
+  let [shoes, setShoes] = useState(data);
   let navigate = useNavigate();
+  let [moreCount, setMoreCount] = useState(0);
+  let [load, setLoad] = useState(false);
+  let [stock] = useState([10, 11, 12]);
 
   return (
     <div className="App">
@@ -75,13 +76,33 @@ function App() {
                   })}
                 </div>
               </div>
+              {load === true ? <div className="load">로딩중입니다.</div> : null}
+              <button
+                className="more"
+                onClick={() => {
+                  setLoad(true);
+                  if (moreCount === 0) {
+                    getAxios(setShoes, shoes, moreCount, setLoad);
+                    setMoreCount(1);
+                  } else if (moreCount === 1) {
+                    getAxios(setShoes, shoes, moreCount, setLoad);
+                    setMoreCount(2);
+                  }
+                }}
+              >
+                더보기
+              </button>
             </>
           }
         ></Route>
 
         <Route
           path="/detail/:id"
-          element={<Detail shoes={shoes}></Detail>}
+          element={
+            <Context1.Provider value={{ stock }}>
+              <Detail shoes={shoes}></Detail>
+            </Context1.Provider>
+          }
         ></Route>
         <Route path="/about" element={<About></About>}>
           <Route path="member" element={<div>멤버임</div>}></Route>
